@@ -1,0 +1,114 @@
+/* Welcome Message Styling */
+    .welcome-section {
+      background-color:darkolivegreen;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 25px;
+      margin-bottom: 30px;
+      text-align: center;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .welcome-title {
+      color:black;
+      font-size: 24px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    
+    .welcome-subtitle {
+      font-size: 18px;
+      color: beige;
+      margin-bottom: 15px;
+    }
+    
+    .welcome-message {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+    
+    .signature {
+      font-style: italic;
+      color: burlywood;
+      font-weight: bold;
+    }
+body {
+      font-family: Arial, sans-serif;
+      background-color: bisque;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px;
+      flex-wrap: wrap;
+    }
+
+    .column {
+      width: 350px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h3 {
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input[type="number"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .button-group {
+      margin-top: 15px;
+    }
+
+    button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    button.reset {
+      background-color: #c0392b;
+    }
+
+    button:not(.reset) {
+      background-color: #27ae60;
+    }
+
+    .segitiga-container {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    svg {
+      margin-bottom: 10px;
+    }
