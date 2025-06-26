@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kalkulator Segitiga</title>
+  <link rel="stylesheet" href="style.CSS" />
+</head>
+<body>
+    <!-- Welcome Message Section -->
+  <div class="welcome-section">
+    <h1 class="welcome-title">Welcome to Katik</h1>
+    <p class="welcome-subtitle">Hai Sobat, Selamat datang di Katik :]</p>
+    <p class="welcome-message">
+      Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar
+    </p>
+    <p class="signature">Segitiga</p>
+  </div>
+
+  <div class="container">
+    
+    <!-- Kolom kiri -->
+    <div class="column">
+      <div class="card">
+        <div class="segitiga-container">
+          <!-- Gambar segitiga untuk luas -->
+          <svg width="120" height="140" viewBox="0 0 120 140">
+            <polygon points="10,130 110,130 60,20" stroke="black" stroke-width="2" fill="white" />
+            <line x1="60" y1="20" x2="60" y2="130" stroke="black" stroke-dasharray="5,5" />
+            <text x="65" y="75" font-size="12" fill="black">t</text>
+            <text x="55" y="145" font-size="12" fill="black">a</text>
+            <text x="95" y="80" font-size="12" fill="black">s</text>
+          </svg>
+        </div>
+        <h3>Rumus Luas Segitiga</h3>
+      </div>
+
+      <div class="card">
+        <h3>Rumus Luas Segitiga yaitu :</h3>
+        <p><strong>L = 1/2 × a × t</strong></p>
+        <small>
+          Di mana:<br>
+          L = Luas<br>
+          a = Panjang Alas<br>
+          t = Tinggi
+        </small>
+      </div>
+
+      <div class="card">
+        <h3>Hitung Luas Segitiga</h3>
+        <label>Nilai Alas</label>
+        <input type="number" id="alas" />
+        <label>Nilai Tinggi</label>
+        <input type="number" id="tinggi" />
+        <p>L = ½ × a × t<br>L = <span id="hasilLuas">0</span></p>
+        <div class="button-group">
+          <button onclick="hitungLuas()">Hitung</button>
+          <button onclick="resetLuas()" class="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kolom kanan -->
+    <div class="column">
+      <div class="card">
+        <div class="segitiga-container">
+          <!-- Gambar segitiga untuk keliling -->
+          <svg width="140" height="140" viewBox="0 0 140 140">
+            <polygon points="20,120 120,120 70,20" stroke="black" stroke-width="2" fill="white" />
+            <text x="20" y="125" font-size="12" fill="black">S1</text>
+            <text x="118" y="125" font-size="12" fill="black">S2</text>
+            <text x="73" y="25" font-size="12" fill="black">S3</text>
+          </svg>
+        </div>
+        <h3>Rumus Keliling Segitiga</h3>
+      </div>
+
+      <div class="card">
+        <h3>Rumus Keliling Segitiga</h3>
+        <p><strong>K = S1 + S2 + S3</strong></p>
+        <small>
+          Di mana:<br>
+          K = Keliling<br>
+          S1, S2, S3 = Sisi segitiga
+        </small>
+      </div>
+
+      <div class="card">
+        <h3>Hitung Keliling Segitiga</h3>
+        <input type="number" id="s1" />
+        <input type="number" id="s2" />
+        <input type="number" id="s3" />
+        <p>K = <span id="hasilKeliling">0</span></p>
+        <div class="button-group">
+          <button onclick="hitungKeliling()">Hitung</button>
+          <button onclick="resetKeliling()" class="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
